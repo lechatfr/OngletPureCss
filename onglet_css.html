@@ -1,0 +1,104 @@
+<html><head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <style type="text/css">
+.onglet {
+	width:450px;
+	margin:20px auto;
+  background: none;
+  border:0;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: flex-start;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    }
+
+.onglet label {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    }
+.onglet div {
+    width:100%;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 1;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    }
+input[type=radio] {
+   position: absolute;
+   top: -9999px;
+   left: -9999px;
+}
+
+/* Default State */
+label {
+   border:1px solid #000;
+   color:#000;
+}
+label + div {
+   padding:20px ;
+   color: #000;
+   text-align: center;
+}
+input[type=radio] + label {
+   background:#fff;
+}
+input[type=radio] + label + div {
+   display:none;
+   border:1px solid #000;
+}
+
+/* Toggled State */
+input[type=radio]:checked + label {
+   background:#aaa;
+}
+input[type=radio]:checked + label + div {
+   display:block;
+}
+  </style>
+  <title>Onglet CSS</title>
+</head>
+
+<body>
+<div class="onglet">
+	<input name="onglet" id="toggle-1" checked="" type="radio">
+	<label for="toggle-1">Onglet 1</label>
+	<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consectetur risus in dolor rhoncus feugiat. Aenean eget blandit purus. Nulla tempus lobortis mi, eu lacinia lorem maximus eget.</div>
+	<input name="onglet" id="toggle-2" type="radio">
+	<label for="toggle-2">Onglet 2</label>
+	<div>Donec euismod lectus velit, eget ornare nunc ultricies eu. Aliquam erat volutpat. Duis euismod urna eget lacus iaculis, ut tincidunt tortor euismod.</div>
+	<input name="onglet" id="toggle-3" type="radio">
+	<label for="toggle-3">Onglet 3</label>
+	<div>Nunc posuere velit mi, in iaculis dolor molestie ac. Suspendisse potenti. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin in dignissim ex. </div>
+	<input name="onglet" id="toggle-4" type="radio">
+	<label for="toggle-4">Onglet 4</label>
+	<div>Vestibulum efficitur sagittis leo, at blandit est consectetur non.</div>
+</div>
+</body></html>
